@@ -1,0 +1,9 @@
+main = "worker.mjs"
+compatibility_date = "2023-05-18"
+
+[durable_objects]
+bindings = [{name = "DURABLE_OBJECT", class_name = "DurableObject" }]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DurableObject"]
